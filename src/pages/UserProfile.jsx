@@ -30,7 +30,7 @@ const UserProfile = () => {
 
     useEffect(() => {
         const getUser = async () => {
-            const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/users/${id}`, { withCredentials: true, headers: { Authorization: `Bearer ${token}` } })
+            const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/users/get/${id}`, { withCredentials: true, headers: { Authorization: `Bearer ${token}` } })
             const { name, email, avatar } = response.data
             setName(name)
             setEmail(email)

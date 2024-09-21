@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { DUMMY_POSTS } from '../data'
 import PostItem from './PostItem'
 import Loader from './Loader'
 import axios from 'axios'

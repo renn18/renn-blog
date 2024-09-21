@@ -39,7 +39,7 @@ const Authors = () => {
                             </div>
                             <div className="author__info">
                                 <h4>{name}</h4>
-                                <p>{post}</p>
+                                <p>Post: {post}</p>
                             </div>
                         </Link>
                     })
