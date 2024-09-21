@@ -7,7 +7,7 @@ import axios from 'axios'
 
 
 const Posts = () => {
-    const [posts, setPosts] = useState(DUMMY_POSTS)
+    const [posts, setPosts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {

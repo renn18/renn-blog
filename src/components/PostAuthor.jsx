@@ -9,7 +9,7 @@ import en from 'javascript-time-ago/locale/en.json'
 import ru from 'javascript-time-ago/locale/ru.json'
 
 TimeAgo.addDefaultLocale(en)
-TimeAgo.addDefaultLocale(ru)
+TimeAgo.addLocale(ru)
 
 const PostAuthor = ({ authorID, createdAt }) => {
     const [author, setAuthor] = useState({})
@@ -27,14 +27,14 @@ const PostAuthor = ({ authorID, createdAt }) => {
     }, [])
 
     return (
-        <Link to={`/posts/users/adjaj`} className='post__author'>
+        <Link to={`/posts/users/${authorID}`} className='post__author'>
             <div className="post__author-avatar">
                 <img src={`${process.env.REACT_APP_ASSETS_URL}/uploads/${author?.avatar}`} alt="" />
             </div>
             <div className="post__author-details">
                 <h5>By: {author?.name}</h5>
                 <small><ReactTimeAgo date={new Date(createdAt)} locale='en-US' /></small>
-                {/* 1:01:25 */}
+
             </div>
         </Link>
     )
