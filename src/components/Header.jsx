@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../assets/mern-blog-assets/icons8-r-96.png'
+import Logo from '../assets/images/icons8-r-96.png'
 import { FaBars } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
 

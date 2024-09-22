@@ -1,5 +1,5 @@
 import React from 'react'
-import LoadingGif from '../assets/mern-blog-assets/loading.gif'
+import LoadingGif from '../assets/images/loading.gif'
 
 const Loader = () => {
     return (
