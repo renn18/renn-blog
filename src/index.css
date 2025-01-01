@@ -245,7 +245,6 @@ footer{
 .post__thumbnail{
   border-radius: var(--radius-3);
   overflow: hidden;
-  height: 16rem;
 }
 
 .post__content{
@@ -492,7 +491,7 @@ input, select, textarea {
 
 /* ===================================================================================> LOADER */
 .loader {
-  position: fixed;
+  position: flex;
   top: 0;
   left: 0;
   height: 100vh;
@@ -502,7 +501,7 @@ input, select, textarea {
 }
 
 .loader__image{
-  width: 4.5rem;
+  width: 50vh;
   aspect-ratio: 1/1;
 }
 

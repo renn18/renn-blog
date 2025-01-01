@@ -3,8 +3,6 @@ import PostItem from './PostItem'
 import Loader from './Loader'
 import axios from 'axios'
 
-
-
 const Posts = () => {
     const [posts, setPosts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
